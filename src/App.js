@@ -12,10 +12,10 @@ function App() {
     <>
     <BrowserRouter>
       <Routes>
-        <Route path='/' index element={<HomePage />} />
-        <Route path='/destination' element={<Destination />} />
-        <Route path='/crew' element={<Crews />} />
-        <Route path='/technology' element={<Technology />} />
+        <Route path='/space-tourism/' index element={<HomePage />} />
+        <Route path='/space-tourism/destination' element={<Destination />} />
+        <Route path='/space-tourism/crew' element={<Crews />} />
+        <Route path='/space-tourism/technology' element={<Technology />} />
       </Routes>
     </BrowserRouter>
     </>
