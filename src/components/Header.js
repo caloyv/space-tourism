@@ -32,26 +32,26 @@ export default function Header(props) {
                 <img ref={closeRef} src={close} onClick={handleClick} className={`close-btn ${isBtnOpen && 'active'}`}alt='Close Icon' />
                 <div className={`mobile-view-container ${isMenuOpen ? 'active' : ""}`}> 
                     <div className="link-container">
-                        <Link to='/'><span className='nav-number'>00</span>Home</Link>
-                        <Link to='/destination'><span className='nav-number'>01</span>Destination</Link>
-                        <Link to="/crew"><span className='nav-number'>02</span>Crew</Link>
-                        <Link to="/technology"><span className='nav-number'>03</span>Technology</Link>
+                        <Link to='/space-tourism/'><span className='nav-number'>00</span>Home</Link>
+                        <Link to='/space-tourism/destination'><span className='nav-number'>01</span>Destination</Link>
+                        <Link to="/space-tourism/crew"><span className='nav-number'>02</span>Crew</Link>
+                        <Link to="/space-tourism/technology"><span className='nav-number'>03</span>Technology</Link>
                     </div>
                 </div>
                 <div className='tablet-view-container'>
                     <div className="tablet-link-container">
-                        <Link className={`home-link ${homePage}`} to='/'>Home</Link>
-                        <Link className={`destination-link ${destinationPage}`} to='/destination'>Destination</Link>
-                        <Link className={`crew-link ${crewPage}`} to="/crew">Crew</Link>
-                        <Link className={`technology-link ${technologyPage}`} to="/technology">Technology</Link>
+                        <Link className={`home-link ${homePage}`} to='/space-tourism/'>Home</Link>
+                        <Link className={`destination-link ${destinationPage}`} to='/space-tourism/destination'>Destination</Link>
+                        <Link className={`crew-link ${crewPage}`} to="/space-tourism/crew">Crew</Link>
+                        <Link className={`technology-link ${technologyPage}`} to="/space-tourism/technology">Technology</Link>
                     </div>
                 </div>
                 <div className='desktop-view-container'>
                     <div className="desktop-link-container">
-                        <Link className={`home-link ${homePage}`} to='/'><span className='desktop-number'>00</span>Home</Link>
-                        <Link className={`destination-link ${destinationPage}`} to='/destination'><span className='desktop-number'>01</span>Destination</Link>
-                        <Link className={`crew-link ${crewPage}`} to="/crew"><span className='desktop-number'>02</span>Crew</Link>
-                        <Link className={`technology-link ${technologyPage}`} to="/technology"><span className='desktop-number'>03</span>Technology</Link>
+                        <Link className={`home-link ${homePage}`} to='/space-tourism/'><span className='desktop-number'>00</span>Home</Link>
+                        <Link className={`destination-link ${destinationPage}`} to='/space-tourism/destination'><span className='desktop-number'>01</span>Destination</Link>
+                        <Link className={`crew-link ${crewPage}`} to="/space-tourism/crew"><span className='desktop-number'>02</span>Crew</Link>
+                        <Link className={`technology-link ${technologyPage}`} to="/space-tourism/technology"><span className='desktop-number'>03</span>Technology</Link>
                     </div>
                 </div>
             </nav>
